@@ -1,0 +1,17 @@
+{% extends 'inv/base.html'%}
+
+{% load static %}
+
+{% block content %}
+
+<div>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div>
+            {{form}}
+        </div>
+        <input type="submit" name="Submit">
+    </form>
+</div>
+
+{% endblock %}
